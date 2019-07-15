@@ -3,3 +3,4 @@ markdown: kramdown
 show_downloads: true
 description: Software Developer
 theme: jekyll-theme-cayman
+google_analytics: UA-143864201-1
