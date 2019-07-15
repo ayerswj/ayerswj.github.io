@@ -1,5 +1,7 @@
 ayersj.github.io
 =====================
 
-This is my static personal website pertaining to my computer science career
+This is my personal website pertaining to my computer science career
 and anything related.  
+
+The page will be updated when possible.
