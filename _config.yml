@@ -1,3 +1,4 @@
 name: Jackson W. Ayers, Computer Scientist
 markdown: kramdown
 permalink: /blog/:year/:month/:day/:title
+theme: cayman
