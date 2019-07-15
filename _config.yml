@@ -1,4 +1,5 @@
 name: Jackson W. Ayers
 markdown: kramdown
-permalink: /blog/:year/:month/:day/:title
+description: Software Developer
+show_downloads: true
 theme: jekyll-theme-cayman
