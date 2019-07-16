@@ -23,9 +23,6 @@
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
   </head>
   <body>
-    <script language="javascript" type="text/javascript">
-   window.status = "<MY MESSAGE>"; 
-</script>
     <header class="page-header" role="banner">
       <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
       <h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
@@ -50,11 +47,6 @@
             <span class="site-footer-owner"><a href="{{ site.github.repository_url }}">{{ site.github.repository_name }}</a> is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a>.</span>
         {% endif %}
         <p id="demo"></p>
-        <h3>Random Quote of The Day</h3>
-
-    <p    $.getJSON("https://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1&callback=", function(a) {
-      $("body").append(a[0].content + "<p>&mdash; " + a[0].title + "</p>")
-});</p>
 
           <script>
           var d = new Date();
