@@ -44,6 +44,11 @@
         {% if site.github.is_project_page %}
             <span class="site-footer-owner"><a href="{{ site.github.repository_url }}">{{ site.github.repository_name }}</a> is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a>.</span>
         {% endif %}
+        <p id="demo"></p>
+          <script>
+          var d = new Date();
+          document.getElementById("demo").innerHTML = d;
+          </script>
       </footer>
     </main>
   </body>
