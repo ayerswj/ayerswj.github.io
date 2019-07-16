@@ -2,6 +2,8 @@
 <html lang="{{ site.lang | default: "en-US" }}">
   <head>
 
+    <script src="jquery-3.4.1.min.js"></script>
+
     {% if site.google_analytics %}
       <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
       <script>
@@ -45,6 +47,12 @@
             <span class="site-footer-owner"><a href="{{ site.github.repository_url }}">{{ site.github.repository_name }}</a> is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a>.</span>
         {% endif %}
         <p id="demo"></p>
+        <h3>Random Quote of The Day</h3>
+
+    <p    $.getJSON("https://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1&callback=", function(a) {
+$("body").append(a[0].content + "<p>&mdash; " + a[0].title + "</p>")
+});</p>
+
           <script>
           var d = new Date();
           document.getElementById("demo").innerHTML = d;
