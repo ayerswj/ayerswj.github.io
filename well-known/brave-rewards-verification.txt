@@ -1,4 +1,0 @@
-This is a Brave Rewards publisher verification file.
-
-Domain: ayerswj.github.io
-Token: 3adef05c5033d5f2a92f6adccd9a4fbcdbdf28cbbe48098c568b074e4bb49088
