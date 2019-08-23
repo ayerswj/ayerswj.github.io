@@ -1,4 +1,5 @@
 ayersj.github.io
 =====================
 ___
-This is my personal website pertaining to my career.  
+
+Personal open source webpage to facilitate my creativity.
