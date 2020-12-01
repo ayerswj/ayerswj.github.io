@@ -2,11 +2,14 @@
 title: Jackson Ayers
 email: ayerswjackson@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-baseurl: "" # the subpath of your site, e.g. /blog/
+baseurl: "s" # the subpath of your site, e.g. /blog/
 url: "" # the base hostname & protocol for your site
 
 twitter_username:
 github_username: ayerswj
+linkedin_username: ayerswj
+facebook_username: ayerswj
+
 
 # Build settings
 markdown: kramdown
