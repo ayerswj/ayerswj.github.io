@@ -1,58 +1,33 @@
-<!DOCTYPE html>
-<html lang="{{ site.lang | default: "en-US" }}">
-  <head>
+{% include header.html %}
 
-    <script src="jquery-3.4.1.min.js"></script>
+{% if site.layout == 'stacked' %}
+  <div class="container-lg py-6 p-responsive text-center">
+    {% include masthead.html metadata=false %}
 
-    {% if site.google_analytics %}
-      <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
-      <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', '{{ site.google_analytics }}');
-      </script>
-    {% endif %}
-    <meta charset="UTF-8">
-    <meta name="author" content="Jackson W. Ayers">
-
-{% seo %}
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#157878">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
-  </head>
-  <body>
-    <header class="page-header" role="banner">
-      <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
-      <h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
-      {% if site.github.is_project_page %}
-        <a href="{{ site.github.repository_url }}" class="btn">View on GitHub</a>
-      {% endif %}
-      {% if site.show_downloads %}
-        <a href="https://www.github.com/ayerswj" class="btn">Github</a>
-        <a href="https://drive.google.com/file/d/1ZSe5SeTKl5VkQsl74KE5R6rm_wltu-Xr/view?usp=sharing" class="btn">Resume</a>
-        <a href="https://www.linkedin.com/in/ayerswj" class="btn">Linkedin</a>
-        <a href="https://www.facebook.com/ayerswj" class="btn">Facebook</a>
-      {% endif %}
-
-    </header>
-
-    <main id="content" class="main-content" role="main">
+    <div class="container-md f4 text-left border rounded-2 bg-white p-3 p-sm-5 mt-6">
+      <p class="f5"><a href="/" class="d-flex flex-items-center">{% octicon chevron-left height:16 class:"mr-2 v-align-middle" fill:#0366d6 aria-label:Home %}Home</a></p>
+      <h1 class="f00-light lh-condensed mb-5">{{ page.title }}</h1>
       {{ content }}
+    </div>
+  </div>
+{% else %}
+  <div class="d-md-flex min-height-full {% unless site.style == 'dark' %}border-md-bottom{% endunless %}">
+    <div class="flex-self-stretch {% if site.style == 'dark' %}bg-gray-dark{% else %}border-md-right border-gray-light bg-white{% endif %} col-md-5 col-lg-4 col-xl-3 px-4 px-md-6 px-lg-7 py-6">
+      {% include masthead.html metadata=true %}
+    </div>
 
-      <footer class="site-footer">
-        <meta name="theme-color" content="#157878">
-        {% if site.github.is_project_page %}
-            <span class="site-footer-owner"><a href="{{ site.github.repository_url }}">{{ site.github.repository_name }}</a> is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a>.</span>
-        {% endif %}
-        <p id="demo"></p>
+    <div class="col-md-7 col-lg-8 col-xl-9 px-4 py-6 px-lg-7 border-top border-md-top-0 bg-gray-light" {% if site.style == 'dark' %}style="background-color: #2f363d !important"{% endif %}>
+      <div class="mx-auto" style="max-width: 900px;">
+        <div class="f4 {% if site.style == 'dark' %}text-white{% endif %} mb-6">
+          <div class="f4 {% if site.style == 'dark' %}text-white{% endif %}">
+            <p class="f5"><a href="{{ site.url }}{{ site.baseurl | append:'/' }}" class="d-flex flex-items-center {% if site.style == 'dark' %}text-white{% endif %}">{% octicon chevron-left height:16 class:"mr-2 v-align-middle" fill:{{ icon_color }} aria-label:Home %}Home</a></p>
+            <h1 class="f00-light lh-condensed mb-5">{{ page.title }}</h1>
+            {{ content }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endif %}
 
-          <script>
-          var d = new Date();
-          document.getElementById("demo").innerHTML = d;
-          </script>
-      </footer>
-    </main>
-  </body>
-</html>
+{% include footer.html %}
