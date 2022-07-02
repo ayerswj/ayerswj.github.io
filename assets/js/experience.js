@@ -6,7 +6,7 @@ const experiencecards = document.querySelector(".experience-cards");
 const exp = [
   {
     title: "Software Engineer",
-    cardImage: "assets/images/experience-page/USAA-Symbol.jpg",
+    cardImage: "assets/images/experience-page/USAA-Symbol.png",
     place: "USAA",
     time: "(Sep, 2020 - present)",
     desp: "<li>Digital Personalization Team</li><li>Made changes in the current progressive web app of Flipkart to react to different actions performed on AMP page.</li> <li>Created a node module called “fk-amp” which abstracts all the files and middlewares and can be easily imported and used from express server.</li>",
@@ -20,14 +20,14 @@ const exp = [
   },
   {
     title: "Technical Support Representative",
-    cardImage: "assets/images/experience-page/Gym-Launch.jpg",
+    cardImage: "assets/images/experience-page/Gym-Launch.jpeg",
     place: "Gym Launch Secrets",
     time: "(Feb - Aug, 18)",
     desp: "<li>Worked on the project “LTI (Learning Tools Interoperability) 2.0 standards Implementation for ekShiksha.</li><li>Designed a software that would help faculty to create a quiz using the questions from the database based on his/her choice of topics and he should be provided with various facilities and options to create a quiz of his choice.</li>",
   },
   {
     title: "Customer Service Representative",
-    cardImage: "assets/images/experience-page/FGT.jpg",
+    cardImage: "assets/images/experience-page/FGT.jpeg",
     place: "Front Gate Tickets",
     time: "(Oct, 17 - Feb, 18)",
     desp: "<li>Worked on the project “LTI (Learning Tools Interoperability) 2.0 standards Implementation for ekShiksha.</li><li>Designed a software that would help faculty to create a quiz using the questions from the database based on his/her choice of topics and he should be provided with various facilities and options to create a quiz of his choice.</li>",
