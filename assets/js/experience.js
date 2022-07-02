@@ -70,13 +70,13 @@ const volunteership = document.querySelector(".volunteership");
 const volunteershipcards = [
   {
     title: "Texas State 3 Day Start Up",
-    cardImage: "assets/images/experience-page/1.jpg",
+    cardImage: "assets/images/experience-page/3DS.jpeg",
     description:
       "Worked with a diverse team of peers from across campus to pursue an entrepreneurial effort and received guidance from experienced faculty, entrepreneurs, and mentors about said effort.",
   },
   {
     title: "Texas State I-Corps",
-    cardImage: "assets/images/experience-page/2.jpg",
+    cardImage: "assets/images/experience-page/icorps_logo.jpeg",
     description:
       "National Science Foundation-funded entrepreneurial program for teams working on business concepts in the science, technology, mathematics, and engineering field",
   }
