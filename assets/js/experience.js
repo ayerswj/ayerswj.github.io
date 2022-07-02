@@ -69,16 +69,16 @@ document.addEventListener("DOMContentLoaded", showCards2);
 const volunteership = document.querySelector(".volunteership");
 const volunteershipcards = [
   {
-    title: "GirlScript Summer Of Code 2020",
+    title: "Texas State 3 Day Start Up",
     cardImage: "assets/images/experience-page/1.jpg",
     description:
-      "Responsible for handling the projects GirlScript App and GirlScript Website Boilerplate.",
+      "Worked with a diverse team of peers from across campus to pursue an entrepreneurial effort and received guidance from experienced faculty, entrepreneurs, and mentors about said effort.",
   },
   {
-    title: "StudentCode-in 2020",
+    title: "Texas State I-Corps",
     cardImage: "assets/images/experience-page/2.jpg",
     description:
-      "Responsible for handling open source contributions for the project Awesome Developer Portfolio.",
+      "National Science Foundation-funded entrepreneurial program for teams working on business concepts in the science, technology, mathematics, and engineering field",
   }
 ];
 
