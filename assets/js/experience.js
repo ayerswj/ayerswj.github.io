@@ -131,7 +131,7 @@ const mentor = [
 const showCards3 = () => {
   let output = "";
   mentor.forEach(
-    ({ title, image, subtitle, desp }) =>
+    ({ title, image, subtitle, desp, href}) =>
       (output += `  
       <div class="blog-slider__item swiper-slide">
         <div class="blog-slider__img">
