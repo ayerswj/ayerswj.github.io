@@ -110,18 +110,21 @@ const mentor = [
     subtitle: "Mentor",
     image: "assets/images/experience-page/uplift.png",
     desp: "I would be responsible for guiding 100s of participants across the globe in their first steps towards Applied Data Science and building end-to-end machine learning projects.",
+    href: "https://github.com/The-Uplift-Project",
   },
   {
     title: "ULHacks",
     subtitle: "Judge",
     image: "assets/images/experience-page/ulhacks.png",
     desp: "ULHacks is a 36 hour long hackathon organized with an aim to enable students to create a project which empowers learning.",
+    href: "https://ulhacks.com/"
   },
   {
     title: "WaffleHacks",
     subtitle: "Judge",
     image: "assets/images/experience-page/wafflehacks.png",
     desp: "WaffleHacks 2021 is an upcoming 48-hour student-organized hackathon with an aim to bring technical solutions to local communities and small businesses.",
+    href: "https://wafflehacks.org/"
   }
 ];
 
@@ -138,7 +141,7 @@ const showCards3 = () => {
           <div class="blog-slider__title">${title}</div>
           <span class="blog-slider__code">${subtitle}</span>
           <div class="blog-slider__text">${desp}</div>
-          <a href="#" class="blog-slider__button">Read More</a>   
+          <a href="${href}" class="blog-slider__button">Read More</a>   
         </div>
       </div>
       `)
