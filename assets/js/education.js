@@ -10,11 +10,6 @@ const moocscards = [
     moocLink: "https://www.udemy.com/course/cryptography-for-beginners/",
   },
   {
-    title: "Machine Learning",
-    cardImage: "assets/images/education-page/coursera2.svg",
-    moocLink: "https://www.coursera.org/learn/machine-learning",
-  },
-  {
     title: "Intro to React",
     cardImage: "assets/images/education-page/edx.svg",
     moocLink: "https://www.edx.org/learn/reactjs",
