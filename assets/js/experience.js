@@ -30,7 +30,7 @@ const exp = [
     cardImage: "assets/images/experience-page/FGT.jpeg",
     place: "Front Gate Tickets",
     time: "(Oct, 17 - Feb, 18)",
-    desp: "Claims Team<",
+    desp: "Claims Team",
   }
 ];
 
